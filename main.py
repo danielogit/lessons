@@ -62,9 +62,8 @@ def is_odd(x):
 print(list(filter(is_odd, lst)))
 print([num for num in lst if is_odd(num)])
 
-grid = [[0, 0, 0],
-         [0, 0, 0]]
-
+# grid = [[0, 0, 0],
+#          [0, 0, 0]]
 num_rows = 2
 num_columns = 3
 grid = []
@@ -82,6 +81,7 @@ print(max(lst, key=lambda x: x * x))
 print([(lambda x: x % 2 == 1)(num) for num in lst])
 print(any([(lambda x: x % 2 == 1)(num) for num in lst]))
 print(all([(lambda x: x % 2 == 1)(num) for num in lst]))
+
 
 def max(lst):
     max_num = -float('inf')
